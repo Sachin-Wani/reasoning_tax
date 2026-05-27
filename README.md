@@ -26,6 +26,7 @@ Venue: TPCTC 2026 (co-located with VLDB 2026)
 │   ├── benchmark_summary.csv
 │   ├── rcs_table.csv
 │   ├── dcm_table.csv
+│   ├── dcm_model_summary.csv
 │   ├── diminishing_returns.csv
 │   ├── tes_a_gemini.csv
 │   ├── per_question_tokens.csv
