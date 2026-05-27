@@ -1,0 +1,7 @@
+benchmark,model_r,family_r,model_i,family_i,acc_i_pct,acc_r_pct,delta_acc_pp,gen_tok_i,gen_tok_r,gen_tok_mult,TES_A
+MMLU-Pro,Gemini 3 Pro (low),Gemini,Claude Opus 4.5,Claude,88.9,89.5,0.6,4800000,10100000,2.1042,0.2851
+MMLU-Pro,Gemini 3 Pro (high),Gemini,Claude Opus 4.5,Claude,88.9,89.8,0.9,4800000,43200000,9.0,0.1
+GPQA Diamond,Gemini 3.1 Pro,Gemini,Claude Opus 4.7,Claude,88.5,94.1,5.6,200000,1120000,5.6,1.0
+GPQA Diamond,Gemini 3.5 Flash,Gemini,Claude Opus 4.7,Claude,88.5,92.2,3.7,200000,1100000,5.5,0.6727
+HLE,Gemini 3.1 Pro,Gemini,Claude Opus 4.7,Claude,31.2,44.7,13.5,6200000,35400000,5.7097,2.3644
+LiveCodeBench,Gemini 3 Pro,Gemini,Gemini 3 Flash,Gemini,79.7,91.7,12.0,630000,11680000,18.5397,0.6473

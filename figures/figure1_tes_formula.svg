@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1100" viewBox="0 0 800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Token Economy Score formula and interpretation diagram</title>
+  <desc id="desc">A three-section academic diagram showing the TES fraction, variable key, and interpretation zones from wasteful to strong.</desc>
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .ink { fill: #1f2933; }
+      .muted { fill: #5f6b76; }
+      .caption { fill: #6b7280; font-size: 21px; font-weight: 400; }
+      .boxCaptionTeal { fill: #dff3ed; font-size: 21px; font-weight: 400; }
+      .boxCaptionViolet { fill: #eee8fb; font-size: 21px; font-weight: 400; }
+      .note { fill: #6b7280; font-size: 17px; font-weight: 400; }
+      .small { fill: #6b7280; font-size: 19px; font-weight: 400; }
+      .formula { font-size: 28px; font-weight: 700; }
+      .label { font-size: 28px; font-weight: 700; }
+      .zoneTitle { font-size: 25px; font-weight: 700; fill: #1f2933; }
+      .zoneSub { font-size: 22px; font-weight: 500; fill: #1f2933; }
+      .badgeText { font-size: 22px; font-weight: 700; fill: #ffffff; }
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .teal { fill: #14866d; }
+      .tealLight { fill: #e8f6f2; }
+      .violet { fill: #6f4bb2; }
+      .violetLight { fill: #f0ebfa; }
+      .coral { fill: #f3a199; }
+      .amber { fill: #f3c36b; }
+      .green { fill: #88cdb9; }
+      .rule { stroke: #25313b; stroke-width: 4; stroke-linecap: round; }
+      .separator { stroke: #ffffff; stroke-width: 3; }
+    </style>
+    <clipPath id="roundedBar">
+      <rect x="90" y="765" width="620" height="108" rx="22" ry="22" />
+    </clipPath>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="800" height="1100" />
+
+  <!-- Top section: formula -->
+  <g id="formula-section">
+    <text class="label ink" x="88" y="235" text-anchor="start" dominant-baseline="middle">TES =</text>
+
+    <rect class="teal" x="238" y="120" width="430" height="96" rx="18" ry="18" />
+    <text class="formula" x="453" y="155" text-anchor="middle" dominant-baseline="middle" fill="#ffffff">
+      Acc(Mᵣ, T) − Acc(Mᵢ, T)
+    </text>
+    <text class="boxCaptionTeal" x="453" y="190" text-anchor="middle" dominant-baseline="middle">accuracy delta in percentage points</text>
+
+    <line class="rule" x1="222" y1="238" x2="684" y2="238" />
+
+    <rect class="violet" x="238" y="260" width="430" height="96" rx="18" ry="18" />
+    <text class="formula" x="453" y="295" text-anchor="middle" dominant-baseline="middle" fill="#ffffff">
+      GenTok(Mᵣ, T) / GenTok(Mᵢ, T)
+    </text>
+    <text class="boxCaptionViolet" x="453" y="330" text-anchor="middle" dominant-baseline="middle">generated token cost multiplier</text>
+  </g>
+
+  <!-- Middle section: variable key -->
+  <g id="variable-key-section">
+    <rect class="teal" x="122" y="450" width="250" height="54" rx="27" ry="27" />
+    <text class="badgeText" x="247" y="478" text-anchor="middle" dominant-baseline="middle">
+      Mᵣ = reasoning model
+    </text>
+
+    <rect class="violet" x="410" y="450" width="300" height="54" rx="27" ry="27" />
+    <text class="badgeText" x="560" y="478" text-anchor="middle" dominant-baseline="middle">
+      Mᵢ = non-reasoning baseline
+    </text>
+
+    <text class="small" x="400" y="552" text-anchor="middle" dominant-baseline="middle">
+      GenTok(M, T) = reasoning_tokens + output_tokens
+    </text>
+    <text class="small" x="400" y="585" text-anchor="middle" dominant-baseline="middle">
+      (input tokens excluded — evaluation harness independent)
+    </text>
+    <text class="small" x="400" y="630" text-anchor="middle" dominant-baseline="middle">
+      <tspan x="400" dy="0">TES-Δ: Mᵢ = same model, reasoning disabled</tspan>
+      <tspan x="400" dy="30">TES-A: Mᵢ = best instruct model on benchmark</tspan>
+    </text>
+  </g>
+
+  <!-- Bottom section: interpretation zones -->
+  <g id="interpretation-section">
+    <g clip-path="url(#roundedBar)">
+      <rect class="coral" x="90" y="765" width="206.67" height="108" />
+      <rect class="amber" x="296.67" y="765" width="206.67" height="108" />
+      <rect class="green" x="503.34" y="765" width="206.66" height="108" />
+      <line class="separator" x1="296.67" y1="765" x2="296.67" y2="873" />
+      <line class="separator" x1="503.34" y1="765" x2="503.34" y2="873" />
+    </g>
+
+    <text class="zoneTitle" x="193" y="807" text-anchor="middle" dominant-baseline="middle">TES ≤ 0</text>
+    <text class="zoneSub" x="193" y="844" text-anchor="middle" dominant-baseline="middle">wasteful</text>
+
+    <text class="zoneTitle" x="400" y="807" text-anchor="middle" dominant-baseline="middle">0 &lt; TES ≤ 1</text>
+    <text class="zoneSub" x="400" y="844" text-anchor="middle" dominant-baseline="middle">marginal</text>
+
+    <text class="zoneTitle" x="607" y="807" text-anchor="middle" dominant-baseline="middle">TES &gt; 1</text>
+    <text class="zoneSub" x="607" y="844" text-anchor="middle" dominant-baseline="middle">strong</text>
+
+    <text class="note" x="193" y="930" text-anchor="middle" dominant-baseline="middle">
+      <tspan x="193" dy="0">Overthinking detected</tspan>
+      <tspan x="193" dy="27">e.g. max effort on</tspan>
+      <tspan x="193" dy="27">knowledge recall</tspan>
+    </text>
+
+    <text class="note" x="400" y="930" text-anchor="middle" dominant-baseline="middle">
+      <tspan x="400" dy="0">MMLU-Pro mean: 0.64</tspan>
+      <tspan x="400" dy="27">GPQA mean: 0.67</tspan>
+    </text>
+
+    <text class="note" x="607" y="930" text-anchor="middle" dominant-baseline="middle">
+      <tspan x="607" dy="0">AIME 2025 mean: 6.27</tspan>
+      <tspan x="607" dy="27">LiveCodeBench mean: 2.57</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+benchmark,model_r,family,TES,cost_r,acc_i_pct,acc_r_pct,delta_acc_pp,quadrant,cost_threshold,tes_threshold
+IFBench,Claude Opus 4.7,Claude,1.8634,40.36875,43.6,58.6,15.0,Q2: Prefer on-prem,19.692,1.0
+IFBench,DeepSeek V4 Pro (High),DeepSeek,3.392,4.49094,45.8,71.3,25.5,Q1: Deploy freely,19.692,1.0
+IFBench,DeepSeek V4 Pro (Max),DeepSeek,1.595,11.43006,45.8,76.5,30.7,Q1: Deploy freely,19.692,1.0
+IFBench,Gemini 3 Flash,Gemini,0.8407,6.8765,55.1,78.0,22.9,Q3: Acceptable,19.692,1.0
+IFBench,GLM-5.1,GLM,1.5733,7.5106,52.0,76.3,24.3,Q1: Deploy freely,19.692,1.0
+IFBench,GPT 5.5 high,GPT,6.5571,21.125,46.1,71.6,25.5,Q2: Prefer on-prem,19.692,1.0
+IFBench,GPT 5.5 xhigh,GPT,5.0604,31.925,46.1,75.9,29.8,Q2: Prefer on-prem,19.692,1.0
+IFBench,Grok 4.20 0309,Grok,29.9971,6.158,47.8,82.9,35.1,Q1: Deploy freely,19.692,1.0
+IFBench,Qwen3-235B-A22B 2507,Qwen,0.9935,1.6655,46.1,51.2,5.1,Q3: Acceptable,19.692,1.0
+IFBench,Qwen3.5-397B-A17B,Qwen,0.8459,9.6234,51.6,78.8,27.2,Q3: Acceptable,19.692,1.0
+IFBench,Qwen3.6-27B,Qwen,4.4184,12.327,45.7,67.6,21.9,Q1: Deploy freely,19.692,1.0
+MMLU-Pro,Claude Opus 4.5,Claude,0.1582,471.875,88.9,89.5,0.6,Q4: Avoid,19.692,1.0
+MMLU-Pro,Claude Sonnet 4.5,Claude,0.2491,407.625,86.0,87.5,1.5,Q4: Avoid,19.692,1.0
+MMLU-Pro,DeepSeek V3.2,DeepSeek,0.4224,13.89,83.7,86.2,2.5,Q3: Acceptable,19.692,1.0
+MMLU-Pro,Gemini 3 Flash,Gemini,0.0397,279.5,88.2,89.0,0.8,Q4: Avoid,19.692,1.0
+MMLU-Pro,GLM 4.7,GLM,0.7497,112.67,79.4,85.6,6.2,Q4: Avoid,19.692,1.0
+MMLU-Pro,GPT 5.2 medium,GPT,1.3333,80.325,81.4,85.9,4.5,Q2: Prefer on-prem,19.692,1.0
+MMLU-Pro,GPT 5.2 xhigh,GPT,0.3028,448.7,81.4,87.4,6.0,Q4: Avoid,19.692,1.0
+MMLU-Pro,Grok 4.1 Fast,Grok,1.4323,12.96,74.3,85.4,11.1,Q1: Deploy freely,19.692,1.0
+MMLU-Pro,Qwen3-235B-A22B 2507,Qwen,0.3404,92.065,82.8,84.3,1.5,Q4: Avoid,19.692,1.0
+MMLU-Pro,Qwen3 32B,Qwen,1.4529,13.9945,72.7,79.8,7.1,Q1: Deploy freely,19.692,1.0
+GPQA Diamond,Gemini 3 Flash,Gemini,0.366,8.4845,81.2,89.8,8.6,Q3: Acceptable,19.692,1.0
+GPQA Diamond,Claude Opus 4.7 (max),Claude,0.224,65.01875,88.5,91.4,2.9,Q4: Avoid,19.692,1.0
+GPQA Diamond,Claude Sonnet 4.6,Claude,0.2111,81.18375,79.9,87.5,7.6,Q4: Avoid,19.692,1.0
+GPQA Diamond,Gemma 4 31B,Gemma,1.175,0.42028,76.3,85.7,9.4,Q1: Deploy freely,19.692,1.0
+GPQA Diamond,Gemma 4 26B-A4B,Gemma,0.927,0.73494,71.4,79.2,7.8,Q3: Acceptable,19.692,1.0
+GPQA Diamond,GLM-5,GLM,0.8834,10.0906,66.6,82.0,15.4,Q3: Acceptable,19.692,1.0
+GPQA Diamond,GPT 5.5 (xhigh),GPT,0.6827,30.335,76.8,93.5,16.7,Q4: Avoid,19.692,1.0
+GPQA Diamond,GPT 5.5 (high),GPT,1.1474,17.825,76.8,93.2,16.4,Q1: Deploy freely,19.692,1.0
+GPQA Diamond,Qwen3.5-397B-A17B,Qwen,1.2326,4.8894,86.1,89.3,3.2,Q1: Deploy freely,19.692,1.0
+GPQA Diamond,Qwen3.6-27B,Qwen,0.3208,8.3454,82.9,84.2,1.3,Q3: Acceptable,19.692,1.0
+GPQA Diamond,DeepSeek V4 Pro (High),DeepSeek,0.6774,7.52202,71.7,90.5,18.8,Q3: Acceptable,19.692,1.0
+GPQA Diamond,DeepSeek V4 Pro (Max),DeepSeek,0.225,20.4537,71.7,88.8,17.1,Q4: Avoid,19.692,1.0
+HLE,Claude Opus 4.7,Claude,0.8482,1539.0625,31.2,39.6,8.4,Q4: Avoid,19.692,1.0
+HLE,Claude Sonnet 4.6,Claude,0.2693,1967.475,13.2,30.0,16.8,Q4: Avoid,19.692,1.0
+HLE,DeepSeek V4 Pro (Max),DeepSeek,0.8653,386.6802,7.7,35.9,28.2,Q4: Avoid,19.692,1.0
+HLE,DeepSeek V4 Pro (High),DeepSeek,1.2423,246.8712,7.7,33.5,25.8,Q2: Prefer on-prem,19.692,1.0
+HLE,Gemini 3 Flash,Gemini,0.4703,129.125,14.1,34.7,20.6,Q4: Avoid,19.692,1.0
+HLE,Gemma 4 26B A4B,Gemma,1.3859,10.236,10.7,18.3,7.6,Q1: Deploy freely,19.692,1.0
+HLE,Gemma 4 31B,Gemma,1.5741,6.9254,11.5,22.7,11.2,Q1: Deploy freely,19.692,1.0
+HLE,GPT-5.5 (xhigh),GPT,0.6686,828.35,12.6,44.3,31.7,Q4: Avoid,19.692,1.0
+HLE,GPT-5.5 (high),GPT,1.0673,498.95,12.6,43.0,30.4,Q2: Prefer on-prem,19.692,1.0
+HLE,Grok 4.3 (high),Grok,1.0248,132.9,6.5,35.0,28.5,Q2: Prefer on-prem,19.692,1.0
+HLE,Qwen3.5 397B A17B,Qwen,2.2667,162.402,18.8,27.3,8.5,Q2: Prefer on-prem,19.692,1.0
+HLE,Qwen3.6 27B,Qwen,1.7284,233.682,13.6,21.6,8.0,Q2: Prefer on-prem,19.692,1.0
+LiveCodeBench,Claude 4.5 Sonnet,Claude,2.2877,58.0125,59.0,71.4,12.4,Q2: Prefer on-prem,19.692,1.0
+LiveCodeBench,Claude Opus 4.5,Claude,2.2707,136.375,73.8,87.1,13.3,Q2: Prefer on-prem,19.692,1.0
+LiveCodeBench,DeepSeek V3.2,DeepSeek,3.2514,44.0742,59.3,86.2,26.9,Q2: Prefer on-prem,19.692,1.0
+LiveCodeBench,Gemini 3 Flash,Gemini,0.3955,53.295,79.7,90.8,11.1,Q4: Avoid,19.692,1.0
+LiveCodeBench,GLM-4.7,GLM,4.285,62.494,56.2,89.4,33.2,Q2: Prefer on-prem,19.692,1.0
+LiveCodeBench,GPT-5.2 (medium),GPT,3.2738,115.95,66.9,89.4,22.5,Q2: Prefer on-prem,19.692,1.0
+LiveCodeBench,GPT-5.2 (xhigh),GPT,0.9798,372.95,66.9,88.9,22.0,Q4: Avoid,19.692,1.0
+LiveCodeBench,Grok 4.1 Fast,Grok,4.5087,5.262,39.9,82.2,42.3,Q1: Deploy freely,19.692,1.0
+LiveCodeBench,Qwen3 235B A22B 2507,Qwen,2.796,38.775,52.4,78.8,26.4,Q2: Prefer on-prem,19.692,1.0
+LiveCodeBench,Qwen3 32B,Qwen,1.6599,3.796,28.8,54.6,25.8,Q1: Deploy freely,19.692,1.0
+AIME 2025,Claude 4.5 Sonnet,Claude,5.8556,4.066125,37.0,88.0,51.0,Q1: Deploy freely,19.692,1.0
+AIME 2025,Claude Opus 4.5,Claude,3.6511,5.901875,62.7,91.3,28.6,Q1: Deploy freely,19.692,1.0
+AIME 2025,DeepSeek V3.2,DeepSeek,7.8065,1.625682,59.0,92.0,33.0,Q1: Deploy freely,19.692,1.0
+AIME 2025,Gemini 3 Flash,Gemini,2.6789,1.66715,55.7,97.0,41.3,Q1: Deploy freely,19.692,1.0
+AIME 2025,GLM-4.7,GLM,11.6529,1.9403,48.0,95.0,47.0,Q1: Deploy freely,19.692,1.0
+AIME 2025,GPT-5.2 (xhigh),GPT,3.7576,11.9015,51.0,99.0,48.0,Q1: Deploy freely,19.692,1.0
+AIME 2025,GPT-5.2 (medium),GPT,8.0494,5.3015,51.0,96.7,45.7,Q1: Deploy freely,19.692,1.0
+AIME 2025,Qwen3 235B A22B 2507,Qwen,6.0125,1.38202,71.7,91.0,19.3,Q1: Deploy freely,19.692,1.0
+AIME 2025,Qwen3 32B,Qwen,7.01,0.230158,19.7,73.0,53.3,Q1: Deploy freely,19.692,1.0
+CritPt,Claude Opus 4.7 (max),Claude,1.7262,111.3,5.1,12.0,6.9,Q2: Prefer on-prem,19.692,1.0
+CritPt,Claude Sonnet 4.6 (max),Claude,0.0768,241.095,0.9,3.1,2.2,Q4: Avoid,19.692,1.0
+CritPt,DeepSeek V4 Pro (Max),DeepSeek,0.6871,26.6916,0.9,12.9,12.0,Q4: Avoid,19.692,1.0
+CritPt,DeepSeek V4 Pro (High),DeepSeek,0.7355,18.9312,0.9,10.0,9.1,Q3: Acceptable,19.692,1.0
+CritPt,Gemini 3 Flash,Gemini,0.2503,11.34,1.4,8.6,7.2,Q3: Acceptable,19.692,1.0
+CritPt,Gemma 4 31B,Gemma,0.2523,0.8382,0.0,1.4,1.4,Q3: Acceptable,19.692,1.0
+CritPt,GLM-5.1,GLM,0.1355,19.692,0.0,4.6,4.6,Q3: Acceptable,19.692,1.0
+CritPt,GPT-5.5 (xhigh),GPT,1.0253,113.5,1.4,27.1,25.7,Q2: Prefer on-prem,19.692,1.0
+CritPt,GPT-5.5 (high),GPT,1.659,65.8,1.4,25.4,24.0,Q2: Prefer on-prem,19.692,1.0
+CritPt,Grok 4.3 (high),Grok,0.3432,9.015,0.0,8.0,8.0,Q3: Acceptable,19.692,1.0
+CritPt,Kimi K2.6,Kimi,0.5737,53.053,1.1,8.0,6.9,Q4: Avoid,19.692,1.0
+CritPt,Qwen3.5 397B A17B,Qwen,0.4224,10.992,0.9,1.7,0.8,Q3: Acceptable,19.692,1.0
+CritPt,Qwen3.6 27B,Qwen,0.0,11.46,0.9,0.9,0.0,Q3: Acceptable,19.692,1.0

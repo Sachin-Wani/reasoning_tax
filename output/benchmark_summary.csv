@@ -1,0 +1,8 @@
+benchmark,mean_TES,std_TES,median_TES,min_TES,max_TES,n_pairs_stats,n_pairs_total,outlier_excluded
+AIME 2025,6.275,2.769,6.013,2.679,11.653,9,9,False
+IFBench,2.714,2.024,1.729,0.841,6.557,10,11,True
+LiveCodeBench,2.571,1.332,2.542,0.396,4.509,10,10,False
+HLE,1.118,0.562,1.046,0.269,2.267,12,12,False
+GPQA Diamond,0.673,0.397,0.68,0.211,1.233,12,12,False
+CritPt,0.607,0.562,0.422,0.0,1.726,13,13,False
+MMLU-Pro,0.648,0.555,0.381,0.04,1.453,10,10,False
