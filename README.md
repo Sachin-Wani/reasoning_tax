@@ -137,13 +137,13 @@ where $$\text{GenTok}(M, T) = \text{reasoning}_{\text{tokens}} + \text{output}_{
 
 ### Reasoning Cost Share (RCS)
 
-$$\text{RCS}(M_r, T) = \frac{\text{cost_reasoning}}{\text{cost_total}} \times 100$$
+$$\text{RCS}(M_r, T) = \frac{\text{cost\_reasoning}}{\text{cost\_total}} \times 100$$
 
 The percentage of total inference cost consumed by the thinking chain.
 
 ### Deployment Cost Multiplier (DCM)
 
-$$\text{DCM}(M, T) = \frac{\text{cost_total_cloud}}{\text{cost_total_on\text{-}prem}}$$
+$$\text{DCM}(M, T) = \frac{\text{cost\_total\_cloud}}{\text{cost\_total\_on\text{-}prem}}$$
 
 How many times cheaper the same workload is on owned hardware versus cloud API.
 
