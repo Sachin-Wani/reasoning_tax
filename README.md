@@ -126,9 +126,9 @@ python analysis/tes_analysis.py --csv data/actuals_final.csv --no-plots
 
 ### Token Economy Score (TES)
 
-$$\text{TES}(M_r, M_i, T) = \frac{[\text{Acc}(M_r, T) - \text{Acc}(M_i, T)] \times 100}{\text{GenTok}(M_r, T) \;/\; \text{GenTok}(M_i, T)}$$
+$$\text{TES}(M_r, M_i, T) = \frac{[\text{Acc}(M_r, T) - \text{Acc}(M_i, T)] \times 100}{\text{GenTok}(M_r, T) / \text{GenTok}(M_i, T)}$$
 
-where $$\text{GenTok}(M, T) = \text{reasoning}_{\text{tokens}} + \text{output}_{\text{tokens}}$$ (input tokens excluded).
+where $$\text{GenTok}(M, T) = \text{ReasoningTokens} + \text{OutputTokens}$$  (input tokens excluded).
 
 - **TES-Δ**: $M_i$ is the same model architecture with reasoning disabled
 - **TES-A**: $M_i$ is the best-performing non-reasoning model on benchmark $T$
@@ -137,13 +137,13 @@ where $$\text{GenTok}(M, T) = \text{reasoning}_{\text{tokens}} + \text{output}_{
 
 ### Reasoning Cost Share (RCS)
 
-$$\text{RCS}(M_r, T) = \frac{\text{cost\_reasoning}}{\text{cost\_total}} \times 100$$
+$$\text{RCS}(M_r, T) = \frac{\text{CostReasoning}}{\text{CostTotal}} \times 100$$
 
 The percentage of total inference cost consumed by the thinking chain.
 
 ### Deployment Cost Multiplier (DCM)
 
-$$\text{DCM}(M, T) = \frac{\text{cost\_total\_cloud}}{\text{cost\_total\_on\text{-}prem}}$$
+$$\text{DCM}(M_r, T) = \frac{\text{CostTotalCloud}}{\text{CostTotalOnPrem}}$$
 
 How many times cheaper the same workload is on owned hardware versus cloud API.
 
