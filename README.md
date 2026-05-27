@@ -128,7 +128,7 @@ python analysis/tes_analysis.py --csv data/actuals_final.csv --no-plots
 
 $$\text{TES}(M_r, M_i, T) = \frac{[\text{Acc}(M_r, T) - \text{Acc}(M_i, T)] \times 100}{\text{GenTok}(M_r, T) \;/\; \text{GenTok}(M_i, T)}$$
 
-where $\text{GenTok}(M, T) = \text{reasoning_tokens} + \text{output_tokens}$ (input tokens excluded).
+where $\text{GenTok}(M, T) = \text{reasoning_{tokens}} + \text{output_{tokens}}$ (input tokens excluded).
 
 - **TES-Δ**: $M_i$ is the same model architecture with reasoning disabled
 - **TES-A**: $M_i$ is the best-performing non-reasoning model on benchmark $T$
