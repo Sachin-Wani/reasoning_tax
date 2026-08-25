@@ -16,11 +16,11 @@ Venue: TPCTC 2026 (co-located with VLDB 2026)
 ├── analysis/
 │   └── tes_analysis.py            # All metric calculations and figure generation
 ├── figures/
-│   ├── figure1_tes_formula.svg    # TES formula and interpretation diagram
-│   ├── figure2_tes_distribution.svg
-│   ├── figure3_diminishing_returns.svg
-│   ├── figure4_rcs_stacked.svg
-│   └── figure5_quadrant.svg
+│   ├── figure0_tes_formula.svg    # TES formula and interpretation diagram
+│   ├── figure1_tes_distribution.svg
+│   ├── figure2_diminishing_returns.svg
+│   ├── figure3_rcs_stacked.svg
+│   └── figure4_quadrant.svg
 ├── output/                        # Generated CSVs from tes_analysis.py
 │   ├── tes_pairs.csv
 │   ├── benchmark_summary.csv
